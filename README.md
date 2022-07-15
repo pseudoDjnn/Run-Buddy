@@ -8,7 +8,7 @@ A website that offers fitness training services.
 * CSS
 
 ## Website
-https://pseudodjnn.github.io/run-buddy/
+https://pseudodjnn.github.io/Run-Buddy/
 
 ## Contribution
 Made with ❤️ by Alexander Havers
