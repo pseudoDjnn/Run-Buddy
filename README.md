@@ -17,4 +17,4 @@ https://pseudodjnn.github.io/Run-Buddy/
 
 Made with ❤️ by Alexander Havers
 
-Run Buddy Inc.
+### ©️2019 Run Buddy, Inc
