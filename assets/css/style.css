@@ -6,13 +6,16 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* commenting in CSS */
   color: #39a6b2;
+}
+
+section {
+  padding: 60px;
 }
 
 /* Header design */
 header {
-  padding: 10px 15px 20px 25px;
+  padding: 20px 35px;
   background-color: #39a6b2;
   display: flex;
   justify-content: space-between;
@@ -24,7 +27,6 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
-  /* display: inline; */
 }
 
 header a {
@@ -33,20 +35,15 @@ header a {
 }
 
 header nav {
-  /* float: right; */
   margin: 7px 0;
 }
 
-header nav u {
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-}
-
-header nav ul li {
-  display: inline;
 }
 
 header nav ul li a {
@@ -55,33 +52,16 @@ header nav ul li a {
   font-size: 1.55vw;
 }
 
-section {
-  padding: 60px;
-}
+/* Hero CSS */
 
 .hero {
   background-image: url("../images/hero-bg.jpg");
-  /* height: 600px; */
   background-size: cover;
   background-position: center;
-  /* position: relative; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-
-.hero-form {
-  border: solid 3px #024e76;
-  background-color: #fce138;
-  padding: 20px;
-  width: 40%;
-  color: #024e76;
-  margin: 3.5%;
-  /* position: absolute; */
-  /* bottom: 120px;
-  right: 140px; */
-}
-
 .hero-cta {
   width: 35%;
   text-align: right;
@@ -95,6 +75,15 @@ section {
   font-style: italic;
   font-size: 55px;
   color: #fce138;
+}
+
+.hero-form {
+  border: solid 3px #024e76;
+  background-color: #fce138;
+  padding: 20px;
+  width: 40%;
+  color: #024e76;
+  margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -128,32 +117,7 @@ section {
   font-size: 16px;
 }
 
-.intro {
-  text-align: center;
-}
-
-/* .intro h2 {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  border-bottom: 3px solid #fce138;
-  display: inline-block;
-} */
-
-.intro p {
-  /* line-height: 1.7;
-  color: #39a6b2;
-  width: 80%;
-  font-size: 20px;
-  margin: 0 auto; */
-  text-align: center;
-}
-
-.steps {
-  /* text-align: center; */
-  background: #fce138;
-}
+/* Section style */
 
 .section-title {
   padding-bottom: 20px;
@@ -161,10 +125,7 @@ section {
   margin: 0 auto 35px auto;
   width: 50%;
   font-size: 55px;
-  /* display: inline-block;
-  padding: 0 100px 20px 100px; */
   border-bottom: 3px solid;
-  /* margin-bottom: 35px; */
   color: #024e76;
 }
 
@@ -176,14 +137,22 @@ section {
   border-color: #39a6b2;
 }
 
-/* .steps div {
-  margin-bottom: 80px;
-} */
+/* WWD CSS */
 
-/* .steps img {
-  width: 15%;
-  margin: 10px 0;
-} */
+.intro p {
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* WYD CSS Style */
+
+.steps {
+  background: #fce138;
+}
 
 .step {
   margin: 50px auto;
@@ -218,6 +187,9 @@ section {
 .step-img img {
   max-width: 100%;
 }
+.step-text {
+  flex: 12;
+}
 
 .step-text p {
   color: #39a6b2;
@@ -231,9 +203,7 @@ section {
   color: #024e76;
 }
 
-/* .steps span {
-  font-size: 38px;
-} */
+/* Trainers CSS section */
 
 .trainers {
   width: 100%;
@@ -241,27 +211,21 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* text-align: center; */
 }
 
 .trainer {
-  /* width: 900px; */
-  margin: 0 auto 30px auto;
+  margin: 20px;
   background: #024e76;
   color: #fce138;
   flex: 1;
-  /* overflow: auto; */
 }
 
 .trainer img {
   width: 100%;
-  /* float: left; */
 }
 
 .trainer-bio {
   padding: 25px;
-  /* float: left;
-  width: 65%; */
   line-height: 1.3;
 }
 
@@ -275,7 +239,6 @@ section {
 
 .trainer-bio h3 {
   font-size: 28px;
-  /* margin-bottom: 8px; */
 }
 
 .trainer-bio h4 {
@@ -289,7 +252,6 @@ section {
 }
 
 .contact {
-  /* text-align: center; */
   background: #024e76;
 }
 
@@ -309,16 +271,10 @@ section {
 }
 
 .contact-info iframe {
-  /* width: 400px; */
   height: 400px;
 }
 
 .contact-info div {
-  /* width: 410px; */
-  /* display: inline-block; */
-  /* vertical-align: top; */
-  /* text-align: left; */
-  /* margin: 30px 0 0 60px; */
   color: white;
 }
 
@@ -372,14 +328,12 @@ footer {
 }
 
 footer h2 {
-  /* display: inline; */
   color: #024e76;
   font-size: 30px;
   margin: 0;
 }
 
 footer div {
-  /* float: right; */
   line-height: 1.5;
   text-align: right;
 }
